@@ -12,10 +12,3 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
-  syncPolicy:
-    automated: 
-      prune: true
-      selfHeal: true
-    excludeResources:
-      - "limitranges/v1"
-      - "resourcequotas/v1"
