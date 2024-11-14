@@ -7,12 +7,14 @@ spec:
   project: default
   source:
     repoURL: https://github.com/Slava-png/argo-practice
-    targetRevision: main
+    targetRevision: HEAD
     path: ./env/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: prod
   syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
     automated: 
       prune: true
       selfHeal: true
