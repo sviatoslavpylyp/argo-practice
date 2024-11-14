@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Slava-png/argo-practice
+    targetRevision: main
+    path: env/stage
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: stage
+  syncPolicy:
+    automated: 
+      prune: true
+      selfHeal: true
+    excludeResources:
+      - "limitranges/v1"
+      - "resourcequotas/v1"
