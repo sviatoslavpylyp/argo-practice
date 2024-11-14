@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Slava-png/argo-practice
     targetRevision: main
-    path: env/stage
+    path: ./env/stage
   destination:
     server: https://kubernetes.default.svc
     namespace: stage
