@@ -22,7 +22,7 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "500m"
-        envs:
+        env:
         - name: DB_PASSWORD
           valueFrom:
             secretKeyRef:
