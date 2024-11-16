@@ -22,6 +22,21 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "500m"
-        
+        envs:
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: db-data
+              key: PASSWORD
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: db-data
+              key: USER
+        - name: ENV
+          valueFrom:
+            configMapKeyRef:
+              name: configmap 
+              key: ENV
         ports:
         - containerPort: 80
