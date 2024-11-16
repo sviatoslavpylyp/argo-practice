@@ -13,11 +13,10 @@ spec:
     server: https://kubernetes.default.svc
     namespace: dev
   syncPolicy:
-    syncOptions:
-      - CreateNamespace=true
     automated: 
       prune: true
       selfHeal: true
     excludeResources:
       - "limitranges/v1"
       - "resourcequotas/v1"
+      

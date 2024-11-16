@@ -13,8 +13,6 @@ spec:
     server: https://kubernetes.default.svc
     namespace: stage
   syncPolicy:
-    syncOptions:
-      - CreateNamespace=true
     automated: 
       prune: true
       selfHeal: true
