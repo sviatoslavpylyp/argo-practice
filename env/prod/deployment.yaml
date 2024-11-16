@@ -33,6 +33,11 @@ spec:
             secretKeyRef:
               name: db-data
               key: USER
+        - name: DB_NAME
+          valueFrom:
+            secretKeyRef:
+              name: db-data
+              key: NAME
         - name: ENV
           valueFrom:
             configMapKeyRef:
