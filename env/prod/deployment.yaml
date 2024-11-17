@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: nginx
+        image: 1aughingbird543/backend:0.1.0
         resources:
           limits:
             memory: "128Mi"
