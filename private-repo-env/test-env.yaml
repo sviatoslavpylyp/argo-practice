@@ -17,4 +17,4 @@ spec:
   source:
     repoURL: https://github.com/Slava-png/argo-practice
     targetRevision: HEAD 
-    path: ./private-repo-env
+    path: ./private-repo-env/resources
