@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: test-env
+  namespace: argocd
+spec: 
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+    syncOptions:
+    - CreateNamespace=true
+  project: default
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: test-env
+  source:
+    repoURL: https://github.com/Slava-png/argo-practice
+    targetRevision: HEAD 
+    path: ./private-repo-env
