@@ -16,8 +16,8 @@ spec:
         app: nginx2
     spec:
       containers:
-      - name: myapp
-        image: 1aughingbird543/backend:0.1.0
+      - name: py-app
+        image: 1aughingbird543/py-app:1.3.0
         resources:
           limits:
             memory: "128Mi"
