@@ -25,8 +25,5 @@ spec:
     automated: 
       prune: true
       selfHeal: true
-    excludeResources:
-      - "limitranges/v1"
-      - "resourcequotas/v1"
     syncOptions:
     - Replace=true
