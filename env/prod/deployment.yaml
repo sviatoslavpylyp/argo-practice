@@ -5,6 +5,9 @@ metadata:
   namespace: prod
   labels:
     app: nginx2
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: "py-app=1aughingbird543/py-app"
+    argocd-image-updater.argoproj.io/my-container-update-strategy: "latest"
 spec:
   replicas: 1
   selector:
