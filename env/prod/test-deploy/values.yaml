@@ -1,0 +1,4 @@
+image:
+  repository: 1aughingbird543/py-app
+  tag: latest
+replicas: 2
