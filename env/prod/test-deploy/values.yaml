@@ -1,5 +1,5 @@
 replicas: 1
 
 image: 
-  repository: 1aughingbird543 
+  repository: 1aughingbird543/py-app
   tag: 1.3.1
