@@ -13,6 +13,9 @@ spec:
     repoURL: https://github.com/Slava-png/argo-practice
     targetRevision: HEAD
     path: env/prod
+    helm:
+      valueFiles:
+      - ./env/prod/test-deploy/values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: prod
