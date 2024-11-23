@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: py-app
-        image: "{{ .Values.image }}:{{ .Values.tag }}"
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: Always
         resources:
           limits:
