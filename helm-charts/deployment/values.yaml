@@ -1,5 +1,0 @@
-replicas: 1
-
-image: 
-  repository: 1aughingbird543 
-  tag: 1.3.1

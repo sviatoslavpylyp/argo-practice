@@ -1,4 +1,0 @@
-dependencies:
-  - name: deployment
-    repository: ../../helm-charts/deployment
-    version: 0.1.0
