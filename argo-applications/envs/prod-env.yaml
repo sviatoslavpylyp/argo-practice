@@ -4,7 +4,7 @@ metadata:
   name: prod-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: py-app=docker.io/1aughingbird543/py-app
+    argocd-image-updater.argoproj.io/image-list: py-app=1aughingbird543/py-app
     argocd-image-updater.argoproj.io/py-app.update-strategy: latest
     argocd-image-updater.argoproj.io/write-back-method: git
 spec:
